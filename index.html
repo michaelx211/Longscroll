@@ -7,6 +7,7 @@
     <title>Long-Scrolling site</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/backtotop.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
@@ -149,8 +150,8 @@ body, html {
   color: #000;
 }
 .caption span.border {
-  background-color: #FFA07A;
-  color: #cc0446;
+  background-color: #000080;
+  color: #800000;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
@@ -167,6 +168,7 @@ h3 {
   color: #000000;
   /* black */
 }
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10,
@@ -175,6 +177,7 @@ h3 {
         background-attachment: scroll;}}
 </style>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
 
 <div class="bgimg-1">
@@ -522,5 +525,5 @@ h3 {
 <script src="js/vendor/what-input.js"></script>
 <script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>
-</body>
+<script src="js/backtotop.js"></script>
 </html>
