@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/leftright.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
   <body>
     <style>
+
 body, html {
   height: 100%;
   margin: 0;
@@ -175,9 +180,34 @@ h3 {
    .bgimg-11, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15, .bgimg-16, .bgimg-17, .bgimg-18, .bgimg-19,
     .bgimg-20, .bgimg-21, .bgimg-22, .bgimg-23, .bgimg-24, .bgimg-25, .bgimg-26, .bgimg-27, .bgimg-28{
         background-attachment: scroll;}}
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #000080
+;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #800000
+;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFD700;
+        }
+
 </style>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<div id="counter"></div>
 
 
 <div class="bgimg-1">
@@ -186,9 +216,12 @@ h3 {
   </div>
 </div>
 
-<div style="color: #777;background-color:#F1F0F0;text-align:center;padding:50px 80px;text-align: justify;">
+<!-- <div class="w3-container w3-center w3-animate-left"> -->
+<div class fadeInLeft>;
+<div class style="color: #777;background-color:#F1F0F0;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;"></h3>
   <h3>This is the first message</h3>
+</div>
 </div>
 
 <div class="bgimg-2"class="border one">
@@ -449,4 +482,6 @@ h3 {
 <script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>
 <script src="js/backtotop.js"></script>
+<script src="js/counterconsole.js"></script>
+<!-- <script src="js/slide.js"></script> -->
 </html>
