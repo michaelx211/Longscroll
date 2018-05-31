@@ -1,22 +1,15 @@
 // When the user scrolls down 120px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function() {scrollFunction()};
 
-     var y = window.pageYOffset;
-     console.log(y);
-
-
-    if (document.body.scrollTop > 25000 || document.documentElement.scrollTop > 25000) {
+function scrollFunction() {
+    if (document.body.scrollTop > 17700 || document.documentElement.scrollTop > 17700) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
+}
 
-
-     counter.style.top = 400 + y * .97 + "px";
-     counter.innerHTML = y + "px";
-};
-
-
+// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
