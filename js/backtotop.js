@@ -2,7 +2,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 30700 || document.documentElement.scrollTop > 30700) {
+    if (document.body.scrollTop > 28700 || document.documentElement.scrollTop > 28700) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
